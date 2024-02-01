@@ -14,14 +14,14 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 export default function App() {
   const [dishes, setDishes] = useState([]);
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      const response = await fetch('http://localhost:8000/getdishes');
-      const data = await response.json();
-      setDishes(data);
-    };
-    fetchUsers();
-  }, []);
+  // useEffect(() => {
+  //   const fetchUsers = async () => {
+  //     const response = await fetch('http://localhost:8000/getdishes');
+  //     const data = await response.json();
+  //     setDishes(data);
+  //   };
+  //   fetchUsers();
+  // }, []);
   return (
     <Router>
 
